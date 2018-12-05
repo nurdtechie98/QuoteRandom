@@ -1,0 +1,37 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color:white;
+}
+#content{
+    margin:auto;
+    margin-top: 40vh;
+    text-align: center;
+    font-size: 150%;
+}
+
+#quote{
+    font-family: 'Bungee Inline', cursive;
+}
+
+#author{
+    font-family: Helvetica;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 20%;
+    border-width: 3px;
+    border-color: white;
+    color: white;
+    box-shadow: 4px 5px #000000;
+}
