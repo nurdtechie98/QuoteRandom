@@ -1,12 +1,10 @@
 {
-  "name": "QuoteRandom",
-  "short_name": "QuoteRv2",
-  "theme_color": "#098bf4",
+  "theme_color": "#19bb05",
   "background_color": "#ffffff",
-  "display": "fullscreen",
-  "orientation": "standalone",
+  "display": "standalone",
+  "orientation": "portrait",
   "Scope": "/",
-  "start_url": "/QuoteRandom/",
+  "start_url": "/QuoteRandom",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
