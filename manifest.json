@@ -4,7 +4,7 @@
   "theme_color": "#098bf4",
   "background_color": "#ffffff",
   "display": "fullscreen",
-  "orientation": "portrait",
+  "orientation": "standalone",
   "Scope": "/",
   "start_url": "/QuoteRandom/",
   "icons": [
