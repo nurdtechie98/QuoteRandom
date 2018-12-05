@@ -1,9 +1,9 @@
 {
   "name": "QuoteRandom",
-  "short_name": "QuoteRv3",
+  "short_name": "QuoteR",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/QuoteRandom",
