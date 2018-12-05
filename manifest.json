@@ -1,12 +1,12 @@
 {
   "name": "QuoteRandom",
-  "short_name": "QuoteR",
-  "theme_color": "#000000",
+  "short_name": "Quote",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
-  "start_url": "/QuoteRandom",
+  "start_url": "/QuoteRandom/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
