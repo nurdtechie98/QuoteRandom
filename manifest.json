@@ -3,7 +3,7 @@
   "short_name": "QuoteRv3",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "Scope": "/",
   "start_url": "/QuoteRandom",
