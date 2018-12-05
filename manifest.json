@@ -1,4 +1,6 @@
 {
+  "name": "QuoteRandom",
+  "short_name": "QuoteR",
   "theme_color": "#19bb05",
   "background_color": "#ffffff",
   "display": "standalone",
