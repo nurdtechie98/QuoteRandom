@@ -16,9 +16,9 @@ body{
 #content{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     height: 30%;
-    width: 50%;
+    width: 70%;
     margin: -15% 0 0 -25%;
     font-size: 150%;
     text-align: center;
@@ -39,4 +39,30 @@ body{
     border-color: white;
     color: white;
     box-shadow: 4px 5px #000000;
+}
+
+@media only screen and (max-width: 420px) {
+    #content{ 
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        height: 30%;
+        width: 100%;
+        margin: -15% 0 0 -25%;
+        font-size: 130%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #content{ 
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        height: 30%;
+        width: 100%;
+        margin: -15% 0 0 -25%;
+        font-size: 120%;
+        text-align: center;
+    }
 }
