@@ -1,11 +1,11 @@
 {
-  "name": "RandomQuote",
-  "short_name": "RandomQ",
+  "name": "QuoteRandom",
+  "short_name": "QuoteRv2",
   "theme_color": "#098bf4",
   "background_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "portrait",
-  "Scope": "/QuoteRandom/",
+  "Scope": "/",
   "start_url": "/QuoteRandom/",
   "icons": [
     {
