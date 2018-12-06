@@ -25,11 +25,21 @@ body{
 
 #quote{
     font-family: 'Bungee Inline', cursive;
+    display: none;
 }
 
 #author{
     font-family: Helvetica;
     text-transform: uppercase;
+    display: none;
+}
+
+#title{
+    width: 100%;
+    background-color: rgb(256,256,256);
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Bungee Inline', cursive;
 }
 
 .btn{
