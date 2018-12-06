@@ -9,6 +9,7 @@
 
 The app has only one button next on pressing which a random quote is displayed and that is pretty much it.<br>
 The implementation was carried out using this [tutorial](https://medium.freecodecamp.org/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2) as reference. Feel free to contribute or clone to take this further.
+Note: the purpose of this app is just to learn the fundamentals of progressive web apps(pwa) and not a test of skills🙈.
 
 
 <div align="center">
