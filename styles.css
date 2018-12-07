@@ -5,6 +5,7 @@ html{
     padding: 0;
 }
 body{
+    transition: background-color 1s ease-out;
     height: 100%;
     width: 100%;
     margin: 0;
