@@ -49,15 +49,6 @@ function random_bg_color() {
 window.addEventListener('load', async e => {
     random_bg_color();
     console.log(navigator.onLine);
-    if(navigator.onLine){
-        navigator.serviceWorker.controller.postMessage("online");
-    }
-    else
-    {
-        displayNotification('no internet','please connent to a network for fresh quotes');
-        navigator.serviceWorker.controller.postMessage("offline");
-    }
-    await fetchNew();
     if ('serviceWorker' in navigator) {
         try {
             navigator.serviceWorker.register('serviceworker.js');
@@ -67,4 +58,13 @@ window.addEventListener('load', async e => {
 
         }
     }
+    if(navigator.onLine){
+        navigator.serviceWorker.controller.postMessage("online");
+    }
+    else
+    {
+        displayNotification('no internet','please connent to a network for fresh quotes');
+        navigator.serviceWorker.controller.postMessage("offline");
+    }
+    await fetchNew();
 });
