@@ -15,6 +15,27 @@ function reload(){
     location.reload();
 }
 
+function displayNotification(mhead,mbody) {
+    if (Notification.permission == 'granted') {
+      navigator.serviceWorker.getRegistration().then(function(reg) {
+        var options = {
+          body: mbody,
+          icon: './images/icons/icon-96x96.png',
+          vibrate: [100, 50, 100],
+          data: {
+            dateOfArrival: Date.now(),
+            primaryKey: 1
+          },
+          actions: [
+            {action: 'explore', title: 'retry'},
+            {action: 'close', title: 'close'}
+          ]
+        };
+        reg.showNotification(mhead, options);
+      });
+    }
+}
+
 function random_bg_color() {
     var x = Math.floor(Math.random() * 150);
     var y = Math.floor(Math.random() * 150);
@@ -27,6 +48,15 @@ function random_bg_color() {
 
 window.addEventListener('load', async e => {
     random_bg_color();
+    console.log(navigator.onLine);
+    if(navigator.onLine){
+        navigator.serviceWorker.controller.postMessage("online");
+    }
+    else
+    {
+        displayNotification('no internet','please connent to a network for fresh quotes');
+        navigator.serviceWorker.controller.postMessage("offline");
+    }
     await fetchNew();
     if ('serviceWorker' in navigator) {
         try {
