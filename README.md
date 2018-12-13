@@ -13,7 +13,7 @@ The implementation was carried out using this [tutorial](https://medium.freecode
 
 
 <div align="center">
-  <img src="./images/20181206_073344_edited.gif">
+  <img src="./images/demo.gif">
 </div>
 
 Installation:
