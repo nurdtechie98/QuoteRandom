@@ -15,7 +15,7 @@ body{
 }
 #content{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 40%;
     height: 30%;
     width: 70%;
@@ -43,6 +43,12 @@ body{
     font-family: 'Bungee Inline', cursive;
 }
 
+.img{
+    height:auto;
+    max-width: 90%;
+}​
+    
+
 .btn{
     width: 20%;
     border-width: 3px;
@@ -54,7 +60,7 @@ body{
 @media only screen and (max-width: 520px) {
 #content{
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 25%;
         height: 30%;
         width: 100%;
