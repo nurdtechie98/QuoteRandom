@@ -54,6 +54,7 @@ body{
 
 img {
     max-width: 90%;
+    min-height: 40vh;
 }
 
 @media only screen and (max-width: 520px) {

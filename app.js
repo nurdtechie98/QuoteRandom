@@ -6,6 +6,7 @@ async function fetchNew() {
     const json = await quote.json();
     var x = document.createElement('img');
     x.src = json.img;
+    x.alt = json.alt;
     console.log(json.img);
     console.log(json.safe_title);
     document.getElementById("quote").appendChild(x);
