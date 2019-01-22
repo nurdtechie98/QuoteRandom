@@ -69,6 +69,7 @@ window.addEventListener('load', async e => {
 
         }
     }
+    /*
     if(navigator.onLine){
         navigator.serviceWorker.controller.postMessage("online");
     }
@@ -77,5 +78,6 @@ window.addEventListener('load', async e => {
         displayNotification('no internet','please connent to a network for fresh quotes');
         navigator.serviceWorker.controller.postMessage("offline");
     }
+    */
     await fetchNew();
 });
