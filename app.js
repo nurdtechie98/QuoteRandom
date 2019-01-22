@@ -2,13 +2,24 @@ async function fetchNew() {
     document.getElementById("quote").style.display='none';
     document.getElementById("author").style.display='none';
     document.getElementById("loader").style.display='block';
-    const quote = await fetch('https://talaikis.com/api/quotes/random/');
+    const quote = await fetch(randomUrl());
     const json = await quote.json();
-    document.getElementById("quote").innerHTML="&#34; "+json.quote+" &#34;";
-    document.getElementById("author").innerHTML="- "+json.author;
+    var x = document.createElement('img');
+    x.src = json.img;
+    console.log(json.img);
+    console.log(json.safe_title);
+    document.getElementById("quote").appendChild(x);
+    document.getElementById("author").innerHTML=json.safe_title;
     document.getElementById("loader").style.display='none';
     document.getElementById("quote").style.display='block';
     document.getElementById("author").style.display='block';
+}
+
+function randomUrl(){
+    var rand = Math.floor((Math.random() * 10000) + 1)%2100;
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    //console.log(proxyurl+'https://xkcd.com/'+rand.toString()+'/info.0.json')
+    return proxyurl+'https://xkcd.com/'+rand.toString()+'/info.0.json';
 }
 
 function reload(){
