@@ -13,9 +13,10 @@ body{
     color:white;
     position: relative;
 }
+
 #content{
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 40%;
     height: 30%;
     width: 70%;
@@ -30,7 +31,7 @@ body{
 }
 
 #author{
-    font-family: Helvetica;
+    font-family: 'Bungee Inline';
     text-transform: uppercase;
     display: none;
 }
@@ -43,12 +44,6 @@ body{
     font-family: 'Bungee Inline', cursive;
 }
 
-img{
-    height:auto;
-    max-width: 90%;
-}​
-    
-
 .btn{
     width: 20%;
     border-width: 3px;
@@ -57,10 +52,14 @@ img{
     box-shadow: 4px 5px #000000;
 }
 
+img {
+    max-width: 90%;
+}
+
 @media only screen and (max-width: 520px) {
 #content{
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 25%;
         height: 30%;
         width: 100%;
